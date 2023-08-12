@@ -12,6 +12,8 @@ window.addEventListener("DOMContentLoaded", e =>
 });
 /* End open all external links in new tab */
 
+/*************************************************************/
+
 // Preloader
 const preloader = document.querySelector("[data-preloader]");
 window.addEventListener('load', () => {
