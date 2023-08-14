@@ -183,7 +183,7 @@ body.nav-active {
 }
 
 .h2 {
-  font-size: var(--fontSize-2);
+  font-size: var(--fontSize-3);
 }
 
 .h3 {
@@ -643,8 +643,7 @@ body.nav-active {
   overflow: hidden;
   background-color: var(--bg-chrome-yellow-alpha-5);
   text-align: center;
-  -webkit-padding-after: 20px;
-          padding-block-end: 20px;
+  padding: 4rem 2rem;
   -webkit-transition: all var(--transition-2);
   transition: all var(--transition-2);
   margin-inline: auto;
@@ -662,9 +661,6 @@ body.nav-active {
 .projects .container .my-projects .project-box .img-box {
   -webkit-margin-after: 20px;
           margin-block-end: 20px;
-}
-.projects .container .my-projects .project-box .project-content {
-  padding: 20px;
 }
 .projects .container .my-projects .project-box .project-content .more {
   display: -webkit-box;
@@ -700,23 +696,46 @@ body.nav-active {
   -webkit-transform: scale(1.05) rotate(1deg);
           transform: scale(1.05) rotate(1deg);
 }
+.projects .container .my-projects .project-box.hide {
+  display: none;
+}
 .projects .btn-primary {
   margin-block: 3rem 2rem;
   margin-inline: auto;
+}
+
+/**************************
+* Professional Data Entry *
+**************************/
+.proessional-data-entry .container .exp-content .btn {
+  margin-block: 2rem;
+  margin-inline: auto;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /**********
 * Contact *
 **********/
 .contact .container .contact-me {
+  margin-block: 6rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
 }
-.contact .container .contact-me .contact-form input[type=text], .contact .container .contact-me .contact-form select, .contact .container .contact-me .contact-form textarea {
+.contact .container .contact-me .contact-form input[type=text], .contact .container .contact-me .contact-form input[type=email], .contact .container .contact-me .contact-form input[type=phone], .contact .container .contact-me .contact-form input[type=url], .contact .container .contact-me .contact-form input[type=number], .contact .container .contact-me .contact-form select, .contact .container .contact-me .contact-form textarea {
+  font-size: var(--fontSize-6);
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--bg-majorelle-blue-alpha-5);
   border-radius: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -724,18 +743,20 @@ body.nav-active {
   margin-bottom: 16px;
   resize: vertical;
 }
-.contact .container .contact-me .contact-form input[type=submit] {
-  background-color: var(--bg-majorelle-blue);
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  -webkit-transition: var(--transition-2);
-  transition: var(--transition-2);
+.contact .container .contact-me .contact-form .contact-form-title {
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
 }
-.contact .container .contact-me .contact-form input[type=submit]:hover {
-  background-color: var(--bg-ocean-blue);
+.contact .container .contact-me .contact-form .contact-form-description {
+  -webkit-margin-after: 4rem;
+          margin-block-end: 4rem;
+}
+.contact .container .contact-me .contact-form form .btn-group {
+  margin-block: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
 }
 .contact .container .contact-me .contact-details h3 {
   margin-block: 2rem 1.2rem;
@@ -748,6 +769,8 @@ body.nav-active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: var(--fontSize-6);
+  margin-block: 1rem;
 }
 .contact .container .contact-me .contact-details p a {
   -webkit-transition: var(--transition-1);
@@ -756,6 +779,9 @@ body.nav-active {
 }
 .contact .container .contact-me .contact-details p a:hover {
   color: var(--bg-red-salsa);
+}
+.contact .container .contact-me .contact-details .img-box img {
+  max-width: 100%;
 }
 
 /*********
@@ -995,6 +1021,20 @@ body.nav-active {
   }
   .contact .container .contact-me {
     grid-template-columns: 1fr 0.8fr;
+  }
+  .contact .container .contact-me .contact-form form .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+  }
+  .contact .container .contact-me .contact-form form .form-group label {
+    width: 200px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
   .footer .container .footer-top {
     grid-template-columns: 1fr 1fr;

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+      Primary Meta Tags
+    -->
+
+    <title>Contact Form Results</title>
+    <meta name="title" content="Contact Form Results">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="keywords" content="Contact Form Results, web development, design, portfolio, front-end, Mohamed Shaker, Mohamed Fayez, Moro">
+    <meta name="description" content="Moro Portfolio Contact Form Results">
+    <meta property="og:description" content="Moro Portfolio Contact Form Results.">
+    <meta property="og:url" content="https://kingmoroacademy.github.io/Moro-Portfolio/results.html">
+    <meta property="og:author" content="Mohamed Shaker">
+    <meta property="og:image" content="https://kingmoroacademy.github.io/Moro-Portfolio/assets/images/contact.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://kingmoroacademy.github.io/Moro-Portfolio/results.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/logos/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="style.min.css">
+
+    <!-- Preload Images -->
+    <link rel="preload" as="image" href="./assets/images/logos/logo.png">
+    <link rel="preload" as="image" href="./assets/images/logos/favicon.ico">
+  </head>
+  <body>
+
+    <!-- Preloader -->
+    <!-- <div class="preloader" data-preloader>
+      <div class="preloader-inner">
+        <img src="./assets/images/logos/favicon-original.png" width="50" height="50" alt="Preloader" class="img">
+      </div>
+    </div> -->
+
+    <!-- Contact Form Results -->
+    <div id="results">
+      <a href="/">Back to Form</a>
+      <script>
+        const resultsList = document.getElementById("results")
+        new URLSearchParams(window.location.search).forEach((value, name) => {
+          resultsList.append(`${name}: ${value}`)
+          resultsList.append(document.createElement('br'))
+        })
+      </script>
+    </div>
+
+  </body>
+</html>
